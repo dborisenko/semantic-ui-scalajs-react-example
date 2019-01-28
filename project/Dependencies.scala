@@ -12,6 +12,11 @@ object Versions {
     val pureconfig = "0.10.1"
   }
 
+  // Scala: JVM + JS libraries
+  object ScalaJvmJs {
+    val cats = "1.5.0"
+  }
+
   // Scala: JS libraries
   object ScalaJs {
     val `scalajs-react-components` = "0.3.1"
@@ -34,6 +39,11 @@ object Dependencies extends DependencyBuilders {
     val `http4s-dsl` = "org.http4s" %% "http4s-dsl" % Versions.ScalaJvm.http4s
     val `http4s-blaze-server` = "org.http4s" %% "http4s-blaze-server" % Versions.ScalaJvm.http4s
     val pureconfig = "com.github.pureconfig" %% "pureconfig" % Versions.ScalaJvm.pureconfig
+  }
+
+  // Scala: JVM + JS libraries
+  object ScalaJvmJs {
+    val `cats-core` = setting("org.typelevel" %%% "cats-core" % Versions.ScalaJvmJs.cats)
   }
 
   // Scala: JS libraries

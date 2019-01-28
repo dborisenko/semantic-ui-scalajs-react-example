@@ -77,7 +77,8 @@ lazy val client = project
   .settings(lintingSettings())
   .settings(
     libraryDependencies ++= Seq(
-      Dependencies.ScalaJs.`semantic-ui-react`.value
+      Dependencies.ScalaJs.`semantic-ui-react`.value,
+      Dependencies.ScalaJvmJs.`cats-core`.value
     ),
     npmDependencies in Compile ++= Seq(
       Dependencies.NodeJs.react,

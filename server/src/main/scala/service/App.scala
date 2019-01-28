@@ -1,3 +1,5 @@
+package service
+
 import cats.effect.{ExitCode, IO, IOApp}
 import cats.implicits._
 import org.http4s.implicits._
@@ -5,7 +7,6 @@ import org.http4s.server.blaze.BlazeServerBuilder
 import pureconfig.ConfigReader
 import pureconfig.error.ConfigReaderException
 import pureconfig.generic.semiauto.deriveReader
-import service.BootstrapService
 
 import scala.concurrent.ExecutionContext.global
 
